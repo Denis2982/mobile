@@ -1,3 +1,10 @@
+@import "angular";
+
 :host {
-  padding: 20px;
+  padding: 26px 0;
+}
+
+.tasks, .points {
+  display: grid;
+  margin-top: 40px;
 }

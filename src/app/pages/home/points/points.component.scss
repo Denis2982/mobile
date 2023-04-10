@@ -1,0 +1,73 @@
+:host {
+  display: grid;
+  gap: 10px;
+}
+.point {
+  display: block;
+  text-decoration: none;
+  background: #F6F5FB;
+  border-radius: 15px;
+  padding: 23px 20px;
+  padding-right: 44px;
+  position: relative;
+  display: flex;
+  gap: 10px;
+
+	&__icon {
+    .material-symbols-outlined {
+      color: #403572;
+    }
+	}
+
+	&__info {
+	}
+
+	&__title {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #403572;
+    margin-bottom: 10px;
+	}
+
+	&__desc {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #403572;
+    opacity: 0.5;
+	}
+
+	&__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    .material-symbols-outlined {
+      color: #403572;
+    }
+	}
+  &._pink {
+    background: #FFF4F4;
+    .point__arrow{
+      .material-symbols-outlined {
+        color: #FF5648;
+      }
+    }
+    .point__title {
+      color: #FF5648;
+    }
+    .point__desc {
+      color: #A27A7A;
+      opacity: 0.7;
+    }
+    .point__icon {
+      .material-symbols-outlined {
+        color: #FF5648;
+      }
+    }
+  }
+}
+
