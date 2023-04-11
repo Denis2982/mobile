@@ -1,0 +1,43 @@
+@import "angular";
+
+:host {
+  display: grid;
+  gap: 20px;
+}
+.side {
+
+  &__title {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #595085;
+    margin-bottom: 8px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    &._green a{
+      background: #F5F9F9;
+      color: #479696;
+    }
+    &._pink a{
+      background: #FFF4F4;
+      color: #FF7E73;
+    }
+  }
+
+  &__item {
+    display: inline-block;
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+

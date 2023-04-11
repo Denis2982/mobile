@@ -1,0 +1,57 @@
+@import "angular";
+
+:host {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.user {
+
+  &__photo {
+    position: relative;
+  }
+
+  &__photo-img {
+
+  }
+
+  &__photo-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -20px;
+  }
+
+  &__desc {
+  }
+
+  &__name {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #595085;
+    margin-bottom: 4px;
+  }
+
+  &__prof {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #595085;
+    opacity: 0.6;
+    margin-bottom: 11px;
+  }
+
+  &__link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration-line: underline;
+    color: #595085;
+  }
+}
+
