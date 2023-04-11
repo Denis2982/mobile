@@ -6,16 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./side.component.scss']
 })
 export class SideComponent {
-  // sides = [
-  //   {
-  //     title: 'Strong side',
-  //     bg: '#F5F9F9',
-  //     color: '#479696',
-  //     desc: [
-  //       {name: 'Analytics'},
-  //       {name: 'Perfectionism'},
-  //       {name: 'Analytics'}
-  //     ]
-  //   }
-  // ]
+  sideStrong = [
+    {name: 'Analytics'},
+    {name: 'Perfectionism'},
+    {name: 'Analytics'}
+  ];
+
+  sideWeak = [
+    {name: 'Perfectionism'},
+    {name: 'Analytics'}
+  ]
 }
