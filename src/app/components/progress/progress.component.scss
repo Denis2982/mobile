@@ -2,6 +2,15 @@
 
 .progress {
   margin-top: 15px;
+  @include min-tablet-small{
+    margin-top: 25px;
+  }
+  @include min-tablet{
+    margin-top: 40px;
+  }
+  @include min-desctop-small{
+    margin-top: 60px;
+  }
   &__title {
     font-family: 'Roboto';
     font-weight: 300;
@@ -9,6 +18,21 @@
     line-height: 21px;
     color: #595085;
     margin-bottom: 12px;
+    @include min-tablet-small{
+      margin-bottom: 20px;
+      font-size: 22px;
+      line-height: 24px;
+    }
+    @include min-tablet{
+      margin-bottom: 25px;
+      font-size: 26px;
+      line-height: 30px;
+    }
+    @include min-desctop-small{
+      margin-bottom: 30px;
+      font-size: 32px;
+      line-height: 36px;
+    }
   }
 
   &__line {
@@ -20,7 +44,7 @@
 
   &__bar {
     position: absolute;
-    width: 60%;
+    width: 0%;
     height: 4px;
     background: #C93F80;
     border-radius: 5px;

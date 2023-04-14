@@ -8,6 +8,12 @@
     font-size: 24px;
     line-height: 28px;
     color: #595085;
+    @include min-tablet{
+      font-size: 28px;
+    }
+    @include min-desctop-small{
+      font-size: 36px;
+    }
   }
 
   &__list {
@@ -15,6 +21,16 @@
     display: grid;
     gap: 10px;
     grid-template-columns: 1fr 1fr;
+    @include min-tablet{
+      gap: 15px;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin-top: 25px;
+    }
+    @include min-desctop-small{
+      gap: 20px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin-top: 50px;
+    }
   }
 
   &__item {
@@ -25,10 +41,19 @@
     font-size: 12px;
     line-height: 14px;
     color: #FFFFFF;
+    @include min-tablet{
+      font-size: 16px;
+      line-height: 18px;
+      padding: 25px;
+    }
+    @include min-desctop-small{
+      font-size: 20px;
+      line-height: 24px;
+      padding: 30px;
+    }
     &._pink {
       background: linear-gradient(90deg, #25196B 0%, #D994A7 100%);
       box-shadow: 0px 15px 25px rgba(115, 78, 133, 0.15);
-
     }
 
     &._green {

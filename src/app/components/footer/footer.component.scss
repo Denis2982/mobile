@@ -8,6 +8,12 @@
 .material-symbols-outlined {
   color: #8B97AB;
   transition: $transition;
+  @include min-tablet{
+    font-size: 30px;
+  }
+  @include min-desctop-small{
+    font-size: 40px;
+  }
 }
 
 a:hover {

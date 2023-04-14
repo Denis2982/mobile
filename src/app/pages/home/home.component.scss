@@ -2,9 +2,27 @@
 
 :host {
   padding: 26px 0;
+  @include min-tablet-small{
+    padding: 35px 0;
+  }
+  @include min-tablet{
+    padding: 40px 0;
+  }
+  @include min-desctop-small{
+    padding: 45px 0;
+  }
 }
 
 .tasks, .points {
   display: grid;
   margin-top: 40px;
+  @include min-tablet-small{
+    margin-top: 50px;
+  }
+  @include min-tablet{
+    margin-top: 60px;
+  }
+  @include min-desctop-small{
+    margin-top: 70px;
+  }
 }

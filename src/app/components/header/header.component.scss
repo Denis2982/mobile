@@ -1,3 +1,5 @@
+@import "angular";
+
 :host{
   display: flex;
   justify-content: space-between;
@@ -6,10 +8,23 @@
 .material-symbols-outlined {
   color: #8B97AB;
   cursor: pointer;
+  @include min-tablet{
+        font-size: 30px;
+  }
+
+  @include min-desctop-small{
+        font-size: 35px;;
+  }
 }
 .title {
   color: #595085;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
+  @include min-tablet{
+        font-size: 20px;
+  }
+  @include min-desctop-small{
+        font-size: 24px;
+  }
 }

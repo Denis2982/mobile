@@ -26,3 +26,25 @@
       @content;
   }
 }
+//------------------------------------------------------
+
+@mixin min-desctop-small{
+  @media (min-width: $desctop-small) {
+      @content;
+  }
+}
+@mixin min-tablet{
+  @media (min-width: $tablet) {
+      @content;
+  }
+}
+@mixin min-tablet-small{
+  @media (min-width: $tablet-small) {
+      @content;
+  }
+}
+@mixin min-mobile{
+  @media (min-width: $mobile) {
+      @content;
+  }
+}
